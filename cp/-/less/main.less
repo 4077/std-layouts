@@ -1,0 +1,159 @@
+// head {
+@__nodeId__: ~"std_layouts_cp__main";
+// }
+
+.@{__nodeId__} {
+    @bgColor: hsl(@hue, @saturation * 1%, @lightness * 1%);
+
+    @borderTopColor: @bgColor + #111111;
+    @borderBottomColor: @bgColor - #111111;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    > .header_ {
+        position: relative;
+        z-index: 20000;
+        flex-grow: 0;
+        background-color: @bgColor;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
+        display: flex;
+        min-height: 43px;
+        max-height: 43px;
+        justify-content: space-between;
+
+        > .index_button {
+            cursor: pointer;
+            padding: 15px;
+            flex-grow: 0;
+            text-decoration: none;
+
+            background-color: @bgColor - #101010;
+
+            .indicator {
+                //height: 13px;
+                //width: 13px;
+                font-size: 10px;
+                border-radius: 3px;
+                background-color: @bgColor - #222222;
+                color: @bgColor + #999999;
+                padding: 2px 5px;
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6) inset;
+            }
+
+            &.hover {
+                background-color: @bgColor - #222222;
+
+                .indicator {
+                    background-color: @bgColor - #444444;
+                }
+            }
+        }
+
+        > .nav {
+            flex-grow: 1;
+
+            .node {
+                display: block;
+                position: relative;
+                padding: 15px 25px;
+                background-color: @bgColor;
+                color: #FFFFFF;
+                text-decoration: none;
+                z-index: 50000;
+                white-space: nowrap;
+
+                &.selected {
+                    background-color: @bgColor - #222222;
+                }
+
+                &:hover {
+                    background-color: @bgColor - #151515;
+                }
+            }
+
+            li.flexMenu-viewMore {
+                position: absolute;
+
+                a {
+                    display: block;
+                    position: relative;
+                    padding: 15px 25px;
+                    background-color: @bgColor;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    z-index: 50000;
+                    white-space: nowrap;
+
+                    &.selected {
+                        background-color: @bgColor - #222222;
+                    }
+
+                    &:hover {
+                        background-color: @bgColor - #151515;
+                    }
+                }
+            }
+
+            ul.not_first_level {
+                z-index: 50000;
+
+                .node {
+                    border-top: 1px solid @borderTopColor;
+                    border-bottom: 1px solid @borderBottomColor;
+
+                    &.selected {
+                        background-color: @bgColor - #222222;
+                        border-top: 1px solid @bgColor - #222222;
+                        border-bottom: 1px solid @bgColor - #222222;
+                    }
+
+                    &:hover {
+                        background-color: @bgColor - #151515;
+                        border-top: 1px solid @bgColor - #151515;
+                        border-bottom: 1px solid @bgColor - #151515;
+                    }
+                }
+            }
+        }
+
+        > .logout_button {
+            flex-grow: 0;
+            cursor: pointer;
+            padding: 15px 25px;
+            color: @bgColor + #222222;
+            white-space: nowrap;
+
+            .login {
+                color: #FFFFFF;
+                margin-right: 5px;
+            }
+
+            &.hover {
+                background-color: @bgColor - #101010;
+                color: @bgColor + #999999;
+            }
+        }
+    }
+
+    > .content {
+        flex-grow: 1;
+
+        &.viewport {
+            overflow: auto;
+        }
+
+        &.flex {
+            display: flex;
+        }
+    }
+
+    &.header_hidden {
+
+        > .header_ {
+            display: none;
+        }
+    }
+}

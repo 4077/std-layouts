@@ -1,0 +1,49 @@
+// head {
+@__nodeId__: ~"std_layouts__hcf";
+// }
+
+.@{__nodeId__} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    > .header {
+        flex-grow: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        z-index: 2;
+
+        > .content {
+            position: relative;
+        }
+    }
+
+    > .middle {
+        flex-grow: 1;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        > .content {
+            position: relative;
+        }
+    }
+
+    > .footer {
+        flex-grow: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        > .content {
+            position: relative;
+        }
+    }
+}
