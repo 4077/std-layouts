@@ -1,0 +1,568 @@
+{
+    "cat_id": 258,
+    "cats": {
+        "nodes_by_id": {
+            "258": {
+                "id": 258,
+                "parent_id": 257,
+                "position": 20,
+                "name": "std-layouts",
+                "path": "modules\/std-layouts"
+            }
+        },
+        "ids_by_parent": [],
+        "parents_by_id": [],
+        "ids_by_order": []
+    },
+    "handlers": {
+        "258": [
+            {
+                "handler": {
+                    "id": 1273,
+                    "target_type": "ewma\\handlers\\models\\Cat",
+                    "target_id": 258,
+                    "cat_position": 20,
+                    "position": 7750,
+                    "instance": "",
+                    "name": "cp",
+                    "path": "modules\/std-layouts:cp"
+                },
+                "root_node": {
+                    "id": 10455,
+                    "handler_id": 1273,
+                    "parent_id": 0,
+                    "name": "",
+                    "source_handler_id": 0,
+                    "position": 10,
+                    "enabled": 1,
+                    "type": "ROOT",
+                    "required": 0,
+                    "cache_enabled": 0,
+                    "data": "{\"combine_mode\":\"concat\",\"mappings\":\"*\"}",
+                    "mappings": ""
+                },
+                "nodes": {
+                    "node_id": 10455,
+                    "node_type": "ROOT",
+                    "nodes": {
+                        "nodes_by_id": {
+                            "10455": {
+                                "id": 10455,
+                                "handler_id": 1273,
+                                "parent_id": 0,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 10,
+                                "enabled": 1,
+                                "type": "ROOT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"combine_mode\":\"concat\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10456": {
+                                "id": 10456,
+                                "handler_id": 1273,
+                                "parent_id": 10455,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 20,
+                                "enabled": 1,
+                                "type": "CALL",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"\\\\css\\\\fontawesome~:load\",\"desc\":\"\"}",
+                                "mappings": ""
+                            },
+                            "10457": {
+                                "id": 10457,
+                                "handler_id": 1273,
+                                "parent_id": 10455,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 30,
+                                "enabled": 1,
+                                "type": "CALL",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"\\\\std\\\\ui\\\\dialogs~:addThemeContainer:ss, \\\\ss dialogsThemes\\\/main\",\"desc\":\"\"}",
+                                "mappings": ""
+                            },
+                            "10458": {
+                                "id": 10458,
+                                "handler_id": 1273,
+                                "parent_id": 10455,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 40,
+                                "enabled": 1,
+                                "type": "CALL",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"\\\\std\\\\layouts\\\\cp~:view\",\"desc\":\"\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10459": {
+                                "id": 10459,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 50,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"meta\\\/title\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10460": {
+                                "id": 10460,
+                                "handler_id": 1273,
+                                "parent_id": 10459,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 60,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{title}\",\"array\":[],\"bool\":false},\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10461": {
+                                "id": 10461,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 70,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"nav\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10462": {
+                                "id": 10462,
+                                "handler_id": 1273,
+                                "parent_id": 10461,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 80,
+                                "enabled": 1,
+                                "type": "CALL",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"\\\\std\\\\ui\\\\nav\\\\dropdown~:view|cp\",\"desc\":\"\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10463": {
+                                "id": 10463,
+                                "handler_id": 1273,
+                                "parent_id": 10462,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 90,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"selected_route\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10464": {
+                                "id": 10464,
+                                "handler_id": 1273,
+                                "parent_id": 10463,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 100,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{route\\\/full}\",\"array\":[],\"bool\":false},\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10465": {
+                                "id": 10465,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 110,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"content\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10466": {
+                                "id": 10466,
+                                "handler_id": 1273,
+                                "parent_id": 10465,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 120,
+                                "enabled": 1,
+                                "type": "HANDLER",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"source\":\"modules\\\/ewma-handlers\\\/std:if\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10467": {
+                                "id": 10467,
+                                "handler_id": 1273,
+                                "parent_id": 10466,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 130,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"value\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10468": {
+                                "id": 10468,
+                                "handler_id": 1273,
+                                "parent_id": 10467,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 140,
+                                "enabled": 1,
+                                "type": "HANDLER",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"source\":\"modules\\\/ewma-access:has\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10469": {
+                                "id": 10469,
+                                "handler_id": 1273,
+                                "parent_id": 10468,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 150,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"permissions\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10470": {
+                                "id": 10470,
+                                "handler_id": 1273,
+                                "parent_id": 10469,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 160,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{permission}\",\"array\":[],\"bool\":false},\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10471": {
+                                "id": 10471,
+                                "handler_id": 1273,
+                                "parent_id": 10466,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 170,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"true\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10472": {
+                                "id": 10472,
+                                "handler_id": 1273,
+                                "parent_id": 10471,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 180,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{content}\",\"array\":[],\"bool\":false},\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10473": {
+                                "id": 10473,
+                                "handler_id": 1273,
+                                "parent_id": 10466,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 190,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"false\",\"desc\":\"\",\"combine_mode\":\"first\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10474": {
+                                "id": 10474,
+                                "handler_id": 1273,
+                                "parent_id": 10473,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 200,
+                                "enabled": 1,
+                                "type": "CALL",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"\\\\std\\\\layouts\\\\accessDenied~:view\",\"desc\":\"\",\"mappings\":\"*\"}",
+                                "mappings": ""
+                            },
+                            "10475": {
+                                "id": 10475,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 210,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"flex\",\"desc\":\"\",\"combine_mode\":\"first\"}",
+                                "mappings": ""
+                            },
+                            "10476": {
+                                "id": 10476,
+                                "handler_id": 1273,
+                                "parent_id": 10475,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 220,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{flex}\",\"array\":[],\"bool\":false}}",
+                                "mappings": ""
+                            },
+                            "10477": {
+                                "id": 10477,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 230,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"viewport\",\"desc\":\"\",\"combine_mode\":\"first\"}",
+                                "mappings": ""
+                            },
+                            "10478": {
+                                "id": 10478,
+                                "handler_id": 1273,
+                                "parent_id": 10477,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 240,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{viewport}\",\"array\":[],\"bool\":false}}",
+                                "mappings": ""
+                            },
+                            "10479": {
+                                "id": 10479,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 250,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"padding\",\"desc\":\"\",\"combine_mode\":\"first\"}",
+                                "mappings": ""
+                            },
+                            "10480": {
+                                "id": 10480,
+                                "handler_id": 1273,
+                                "parent_id": 10479,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 260,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"string\",\"value\":{\"string\":\"{padding}\",\"array\":[],\"bool\":false}}",
+                                "mappings": ""
+                            },
+                            "10481": {
+                                "id": 10481,
+                                "handler_id": 1273,
+                                "parent_id": 10458,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 270,
+                                "enabled": 1,
+                                "type": "INPUT",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"path\":\"hsl_by_env_id\",\"desc\":\"\",\"combine_mode\":\"first\"}",
+                                "mappings": ""
+                            },
+                            "10482": {
+                                "id": 10482,
+                                "handler_id": 1273,
+                                "parent_id": 10481,
+                                "name": "",
+                                "source_handler_id": 0,
+                                "position": 280,
+                                "enabled": 1,
+                                "type": "VALUE",
+                                "required": 0,
+                                "cache_enabled": 0,
+                                "data": "{\"name\":\"\",\"type\":\"array\",\"value\":{\"string\":\"\",\"array\":{\"local\":\"120, 50, 30\",\"remote\":{\"dev\":\"210, 65, 31\",\"crm\":\"120, 1, 22\",\"prod\":\"0, 100, 29\"}},\"bool\":false}}",
+                                "mappings": ""
+                            }
+                        },
+                        "ids_by_parent": {
+                            "10455": [
+                                10456,
+                                10457,
+                                10458
+                            ],
+                            "10458": [
+                                10459,
+                                10461,
+                                10465,
+                                10475,
+                                10477,
+                                10479,
+                                10481
+                            ],
+                            "10459": [
+                                10460
+                            ],
+                            "10461": [
+                                10462
+                            ],
+                            "10462": [
+                                10463
+                            ],
+                            "10463": [
+                                10464
+                            ],
+                            "10465": [
+                                10466
+                            ],
+                            "10466": [
+                                10467,
+                                10471,
+                                10473
+                            ],
+                            "10467": [
+                                10468
+                            ],
+                            "10468": [
+                                10469
+                            ],
+                            "10469": [
+                                10470
+                            ],
+                            "10471": [
+                                10472
+                            ],
+                            "10473": [
+                                10474
+                            ],
+                            "10475": [
+                                10476
+                            ],
+                            "10477": [
+                                10478
+                            ],
+                            "10479": [
+                                10480
+                            ],
+                            "10481": [
+                                10482
+                            ]
+                        },
+                        "parents_by_id": {
+                            "10456": 10455,
+                            "10457": 10455,
+                            "10458": 10455,
+                            "10459": 10458,
+                            "10460": 10459,
+                            "10461": 10458,
+                            "10462": 10461,
+                            "10463": 10462,
+                            "10464": 10463,
+                            "10465": 10458,
+                            "10466": 10465,
+                            "10467": 10466,
+                            "10468": 10467,
+                            "10469": 10468,
+                            "10470": 10469,
+                            "10471": 10466,
+                            "10472": 10471,
+                            "10473": 10466,
+                            "10474": 10473,
+                            "10475": 10458,
+                            "10476": 10475,
+                            "10477": 10458,
+                            "10478": 10477,
+                            "10479": 10458,
+                            "10480": 10479,
+                            "10481": 10458,
+                            "10482": 10481
+                        },
+                        "ids_by_order": [
+                            10456,
+                            10457,
+                            10458,
+                            10459,
+                            10460,
+                            10461,
+                            10462,
+                            10463,
+                            10464,
+                            10465,
+                            10466,
+                            10467,
+                            10468,
+                            10469,
+                            10470,
+                            10471,
+                            10472,
+                            10473,
+                            10474,
+                            10475,
+                            10476,
+                            10477,
+                            10478,
+                            10479,
+                            10480,
+                            10481,
+                            10482
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}
