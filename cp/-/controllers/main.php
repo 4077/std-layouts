@@ -14,7 +14,9 @@ class Main extends \Controller
             $appName = $this->app->getConfig('name');
             $metaTitle = $this->data('meta/title');
 
-            $this->app->html->setTitle(($metaTitle ? $metaTitle : 'cp') . ' - ' . $appName);
+            if (null !== $metaTitle) {
+                $this->app->html->setTitle(($metaTitle ?: 'cp') . ' - ' . $appName);
+            }
 
             $v->assign([
                            'VIEWPORT_CLASS'      => $this->data('viewport') ? 'viewport' : '',
