@@ -15,7 +15,7 @@
 
     > .header_ {
         position: relative;
-        z-index: 20000;
+        z-index: 8000;
         flex-grow: 0;
         background-color: @bgColor;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
@@ -135,6 +135,10 @@
                 background-color: @bgColor - #101010;
                 color: @bgColor + #999999;
             }
+        }
+
+        &:hover {
+            z-index: 18000;
         }
     }
 
